@@ -23,3 +23,28 @@
     margin: auto;
     width: 1340px;
 }
+
+.brand-name {
+    font-size: 25px !important;
+}
+
+.modal {
+    width: 450px;
+    height: auto;
+    padding: 25px;
+}
+
+
+.modal-img {
+    background: #f5f7fd;
+    padding: 20px;
+    width: 50%;
+    text-align: center;
+    margin: 10px;
+}
+
+.modal-img h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #9b1fe9;
+}

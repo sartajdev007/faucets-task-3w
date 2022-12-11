@@ -19,7 +19,7 @@ const Header = () => {
             <Navbar bg="light" expand="lg" className=' py-3'>
                 <Container className='d-flex justify-content-between'>
                     <div>
-                        <Navbar.Brand href="/" className='color1 fw-bold' >Faucets</Navbar.Brand>
+                        <Navbar.Brand href="/" className='color1 fw-bold brand-name' >Faucets</Navbar.Brand>
                     </div>
                     <div>
                         <Navbar.Collapse id="basic-navbar-nav">
@@ -57,13 +57,6 @@ const Header = () => {
                     </div>
                 </Container>
             </Navbar>
-            <div className='notifysection py-3'>
-                <div className='container'>
-                    <div className='text-white'>
-                        <p className='text-center'>Notice Here</p>
-                    </div>
-                </div>
-            </div>
         </div>
     );
 };
