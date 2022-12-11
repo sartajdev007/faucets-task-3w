@@ -1,0 +1,14 @@
+.color1 {
+    color: #9b1fe9 !important
+}
+
+.border1 {
+    border: 2px solid #9b1fe9 !important;
+    border-radius: 3px !important;
+}
+
+.modalbtn:hover {
+    border: 2px solid #9b1fe9;
+    border-radius: 3px;
+    color: #9b1fe9
+}
