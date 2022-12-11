@@ -12,3 +12,14 @@
     border-radius: 3px;
     color: #9b1fe9
 }
+
+
+.notifysection {
+    background-color: #9b1fe9;
+}
+
+.container {
+    padding: 0 30px;
+    margin: auto;
+    width: 1340px;
+}

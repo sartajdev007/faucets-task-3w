@@ -1,0 +1,22 @@
+.form-container {
+    background: #fff;
+    padding: 25px 20px;
+}
+
+.warning {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #eef2fe;
+}
+
+.warning svg {
+    color: #9b1fe9 !important;
+    font-size: 18px;
+}
+
+.warning p {
+    font-size: 14px;
+    margin-left: 10px !important;
+    margin-top: 15px;
+}
