@@ -1,6 +1,32 @@
+.home {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.notifysection {
+    background-color: #9b1fe9;
+}
+
+.notice-container {
+    padding: 0px 30px !important;
+    margin: auto !important;
+    max-width: 1340px;
+}
+
+
+
+.notice-text {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+
 .form-container {
     background: #fff;
     padding: 25px 20px;
+}
+
+.form-control {
+    font-size: 14px !important;
 }
 
 .heading {
@@ -18,13 +44,17 @@
 .warning {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 0 10px;
     background: #eef2fe;
 }
 
 .warning svg {
     color: #9b1fe9 !important;
     font-size: 18px;
+}
+
+.warning p {
+    font-size: 14px;
 }
 
 .labeltext {
@@ -44,7 +74,7 @@
     font-size: 13px;
     font-weight: 600;
     color: #fff;
-    border-radius: 2px;
+    border-radius: 3px;
     padding: 10px 15px;
 }
 
@@ -53,7 +83,7 @@
     border: 1px solid #eee;
     border-radius: 3px;
     padding: 10px;
-    margin-top: 5px
+    margin-top: 5px !important
 }
 
 .req-text {

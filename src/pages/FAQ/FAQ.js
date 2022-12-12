@@ -7,7 +7,7 @@ import './FAQ.css'
 
 const FAQ = () => {
     return (
-        <Container>
+        <Container className='home'>
             <div className='title text-center'>
                 <p>Frequently Asked Questions</p>
             </div>
@@ -15,7 +15,7 @@ const FAQ = () => {
                 <div class="accordion-item faq-item">
                     <h2 class="accordion-header" id="flush-headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            <h2 className='para'>Why do blockchains need oracles?</h2>
+                            <h2 className='ques'>Why do blockchains need oracles?</h2>
                         </button>
                     </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -25,7 +25,7 @@ const FAQ = () => {
                 <div class="accordion-item faq-item">
                     <h2 class="accordion-header" id="flush-headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            <h2 className='para'>What is the Chainlink Network?</h2>
+                            <h2 className='ques'>What is the Chainlink Network?</h2>
                         </button>
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
@@ -35,7 +35,7 @@ const FAQ = () => {
                 <div class="accordion-item faq-item">
                     <h2 class="accordion-header" id="flush-headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            <h2 className='para'>Where can I explore the performance and reliability of the Chainlink Network?</h2>
+                            <h2 className='ques'>Where can I explore the performance and reliability of the Chainlink Network?</h2>
                         </button>
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -45,7 +45,7 @@ const FAQ = () => {
                 <div class="accordion-item faq-item">
                     <h2 class="accordion-header" id="flush-headingFour">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                            <h2 className='para'>What is Chainlink Verifiable Random Function (VRF)?</h2>
+                            <h2 className='ques'>What is Chainlink Verifiable Random Function (VRF)?</h2>
                         </button>
                     </h2>
                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
@@ -55,7 +55,7 @@ const FAQ = () => {
                 <div class="accordion-item faq-item">
                     <h2 class="accordion-header" id="flush-headingFive">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                            <h2 className='para'>What is Chainlink Proof of Reserve?</h2>
+                            <h2 className='ques'>What is Chainlink Proof of Reserve?</h2>
                         </button>
                     </h2>
                     <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
@@ -65,7 +65,7 @@ const FAQ = () => {
                 <div class="accordion-item faq-item">
                     <h2 class="accordion-header" id="flush-headingSix">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                            <h2 className='para'>Who can use Chainlink?</h2>
+                            <h2 className='ques'>Who can use Chainlink?</h2>
                         </button>
                     </h2>
                     <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
@@ -75,7 +75,7 @@ const FAQ = () => {
                 <div class="accordion-item faq-item">
                     <h2 class="accordion-header" id="flush-headingSeven">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                            <h2 className='para'>How do I keep up with current protocol development?</h2>
+                            <h2 className='ques'>How do I keep up with current protocol development?</h2>
                         </button>
                     </h2>
                     <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
@@ -85,7 +85,7 @@ const FAQ = () => {
                 <div class="accordion-item faq-item">
                     <h2 class="accordion-header" id="flush-headingEight">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                            <h2 className='para'>How do I keep up with current protocol development?</h2>
+                            <h2 className='ques'>How do I keep up with current protocol development?</h2>
                         </button>
                     </h2>
                     <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
@@ -95,7 +95,7 @@ const FAQ = () => {
                 <div class="accordion-item faq-item">
                     <h2 class="accordion-header" id="flush-headingNine">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-                            <h2 className='para'>How can I reach out to Chainlink for support?</h2>
+                            <h2 className='ques'>How can I reach out to Chainlink for support?</h2>
                         </button>
                     </h2>
                     <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">

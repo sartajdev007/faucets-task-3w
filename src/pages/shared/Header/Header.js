@@ -14,8 +14,8 @@ const Header = () => {
 
 
     return (
-        <div>
-            <Navbar bg="light" expand="lg" className=' py-3'>
+        <div className='home'>
+            <Navbar bg="white" className=' py-3'>
                 <Container className='d-flex justify-content-between'>
                     <div>
                         <Navbar.Brand href="/" className='color1 fw-bold brand-name' >Faucets</Navbar.Brand>
@@ -26,7 +26,7 @@ const Header = () => {
                                 <Dropdown id="basic-nav-dropdown">
                                     <Dropdown.Toggle className='eth-heading' variant="" id="dropdown-basic">
                                         <img className='eth-logo' src="https://faucets.netlify.app/static/media/ethereum.42dac5dc.svg" height='15px' weight='15px' alt="" />
-                                        <span>Ethereum Kovan</span>
+                                        <span className='d-sm-none d-md-inline'>Ethereum Kovan</span>
                                     </Dropdown.Toggle>
                                     <Dropdown.Menu className='rounded-0 list'>
                                         <Dropdown.Item className='list-item'>
@@ -63,24 +63,37 @@ const Header = () => {
                                         </Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
-                                <button className='modalbtn' onClick={() => setShowModal(true)}>
-                                    <IoWallet></IoWallet> <span>Connect Wallet</span>
-                                </button>
+                                <div className='connect'>
+                                    <button className='modalbtn' onClick={() => setShowModal(true)}>
+                                        <IoWallet className='wallet'></IoWallet> <span className='d-sm-none d-md-block'>Connect Wallet</span>
+                                    </button>
+                                </div>
                                 <WalletModal
                                     show={showModal}
                                     onHide={() => setShowModal(false)}
                                 />
-                                <Dropdown>
-                                    <Dropdown.Toggle className='border-0 rounded-5 ms-2 bg-transparent' id="dropdown-basic">
-                                        <FaRegUserCircle className='fs-4 text-secondary'></FaRegUserCircle>
+                                <div class="dropdown">
+                                    <button className='border-0 rounded-5 ms-0 bg-transparent user-menu' data-bs-toggle="dropdown" aria-expanded="false">
+                                        <FaRegUserCircle className='fs-2 text-secondary ms-1 mt-1'></FaRegUserCircle>
+                                    </button>
+                                    <ul class="dropdown-menu p-2 rounded-0 user-list">
+                                        <li><Link to='/login' className='text-decoration-none menu-link'>Log In</Link></li>
+                                        <li><Link to='/register' className='text-decoration-none menu-link'>Sign Up</Link></li>
+                                        <li><Link to='/faq' className='text-decoration-none menu-link'>FAQ</Link></li>
+                                    </ul>
+                                </div>
+
+                                {/* <Dropdown className='ms-0'>
+                                    <Dropdown.Toggle className='border-0 rounded-5 ms-0 bg-transparent user-menu' id="dropdown-basic">
+                                        <FaRegUserCircle className='fs-3 text-secondary ms-0'></FaRegUserCircle>
                                     </Dropdown.Toggle>
 
                                     <Dropdown.Menu className='p-2 rounded-0'>
-                                        <Dropdown.Item><Link to='/login' className='text-decoration-none text-body'>Log In</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to='/register' className='text-decoration-none text-body'>Sign Up</Link></Dropdown.Item>
-                                        <Dropdown.Item><Link to='/faq' className='text-decoration-none text-body'>FAQ</Link></Dropdown.Item>
+                                        <Dropdown.Item></Dropdown.Item>
+                                        <Dropdown.Item></Dropdown.Item>
+                                        <Dropdown.Item></Dropdown.Item>
                                     </Dropdown.Menu>
-                                </Dropdown>
+                                </Dropdown> */}
                             </Nav>
                         </Navbar.Collapse>
                     </div>

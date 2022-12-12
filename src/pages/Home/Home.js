@@ -17,11 +17,11 @@ const Home = () => {
     }
 
     return (
-        <div>
-            <div className='notifysection py-3'>
-                <div className='container'>
+        <div className='home'>
+            <div className='notifysection py-2'>
+                <div className='notice-container'>
                     <div className='text-white'>
-                        <p className='text-center'>Notice Here</p>
+                        <p className='notice-text text-center'>Notice Here</p>
                     </div>
                 </div>
             </div>

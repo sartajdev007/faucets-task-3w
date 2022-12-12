@@ -32,7 +32,7 @@ const Login = () => {
     };
 
     return (
-        <div className='login-page'>
+        <div className='login-page home'>
             <div className="login-container">
                 <div className="login-form">
                     <div className="login-title">
