@@ -4,7 +4,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Dropdown from 'react-bootstrap/Dropdown';
 import './Header.css'
-import Button from 'react-bootstrap/Button';
 import WalletModal from './WalletModal';
 import { IoWallet } from "react-icons/io5";
 import { FaRegUserCircle } from "react-icons/fa";
@@ -25,18 +24,48 @@ const Header = () => {
                         <Navbar.Collapse id="basic-navbar-nav">
                             <Nav className="me-auto">
                                 <Dropdown id="basic-nav-dropdown">
-                                    <Dropdown.Toggle className='border border-1 border-secondary rounded-1 px-3' variant="" id="dropdown-basic">
-                                        Ethereum Kovan
+                                    <Dropdown.Toggle className='eth-heading' variant="" id="dropdown-basic">
+                                        <img className='eth-logo' src="https://faucets.netlify.app/static/media/ethereum.42dac5dc.svg" height='15px' weight='15px' alt="" />
+                                        <span>Ethereum Kovan</span>
                                     </Dropdown.Toggle>
-                                    <Dropdown.Menu className='rounded-0'>
-                                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                                    <Dropdown.Menu className='rounded-0 list'>
+                                        <Dropdown.Item className='list-item'>
+                                            <img src="https://faucets.netlify.app/static/media/arbitrum.79164059.svg" alt="" />
+                                            <p>Arbitrum Rinkeby</p>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item className='list-item'>
+                                            <img src="https://faucets.netlify.app/static/media/avalanche.234db155.svg" alt="" />
+                                            <p>Avalanche Fuji</p>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item className='list-item'>
+                                            <img src="https://faucets.netlify.app/static/media/bsc.d8c61230.svg" alt="" />
+                                            <p>BNB Chain Testnet</p>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item className='list-item'>
+                                            <img src="https://faucets.netlify.app/static/media/ethereum.42dac5dc.svg" alt="" />
+                                            <p>Ethereum Rinkeby</p>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item className='list-item'>
+                                            <img src="https://faucets.netlify.app/static/media/fantom.3f8c71bb.svg" alt="" />
+                                            <p>Fantom Testnet</p>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item className='list-item'>
+                                            <img src="https://faucets.netlify.app/static/media/harmony.02c2e3ba.svg" alt="" />
+                                            <p>Harmony Testnet</p>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item className='list-item'>
+                                            <img src="https://faucets.netlify.app/static/media/poa.90512ab9.svg" alt="" />
+                                            <p>POA Network Sokol</p>
+                                        </Dropdown.Item>
+                                        <Dropdown.Item className='list-item'>
+                                            <img src="https://faucets.netlify.app/static/media/polygon.97ff139c.svg" alt="" />
+                                            <p>Polygon Mumbai</p>
+                                        </Dropdown.Item>
                                     </Dropdown.Menu>
                                 </Dropdown>
-                                <Button className='rounded-1 ms-2 color1 border1 modalbtn px-3' variant='outline' onClick={() => setShowModal(true)}>
-                                    <IoWallet></IoWallet> Connect Wallet
-                                </Button>
+                                <button className='modalbtn' onClick={() => setShowModal(true)}>
+                                    <IoWallet></IoWallet> <span>Connect Wallet</span>
+                                </button>
                                 <WalletModal
                                     show={showModal}
                                     onHide={() => setShowModal(false)}

@@ -6,14 +6,15 @@
   background: #eef2fe !important;
 }
 
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-/* .font-face {
-  font-family: 'VarelaRound';
-} */
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {

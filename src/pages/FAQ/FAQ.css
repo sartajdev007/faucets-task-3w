@@ -1,0 +1,32 @@
+.title {
+    margin: 30px 0px !important;
+}
+
+.title p {
+    font-size: 30px;
+    text-transform: capitalize;
+    font-weight: 600 !important;
+    color: #9b1fe9;
+}
+
+.faq {
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 30px !important;
+}
+
+.faq-item {
+    border: 1px solid #eee;
+    margin: 10px 0;
+}
+
+.para {
+    font-size: 17px !important;
+    font-weight: 600;
+    color: #1a2b6b !important;
+}
+
+.accordion-body {
+    font-size: 14px;
+    color: gray;
+}

@@ -1,14 +1,35 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Login.css';
 import { HiEye } from "react-icons/hi2"
 import { HiEyeSlash } from "react-icons/hi2"
-import { FaFacebook, FaGoogle, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { GoogleLogin } from 'react-google-login';
+import { gapi } from 'gapi-script';
 
 
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false)
+    const clientId = '192551751924-n548lf747lic0q13vcj27olnb8vi4j8m.apps.googleusercontent.com'
+
+
+    useEffect(() => {
+        const initClient = () => {
+            gapi.client.init({
+                clientId: clientId,
+                scope: ''
+            });
+        };
+        gapi.load('client:auth2', initClient);
+    });
+
+    const onSuccess = (res) => {
+        console.log('success:', res);
+    };
+    const onFailure = (err) => {
+        console.log('failed:', err);
+    };
 
     return (
         <div className='login-page'>
@@ -40,7 +61,14 @@ const Login = () => {
                         <div className='social'>
                             <p>Or</p>
                             <div className="logos">
-                                <FaGoogle className='logo'></FaGoogle>
+                                <GoogleLogin
+                                    clientId={clientId}
+                                    buttonText="Sign in with Google"
+                                    onSuccess={onSuccess}
+                                    onFailure={onFailure}
+                                    cookiePolicy={'single_host_origin'}
+                                    isSignedIn={true}
+                                />
                                 <FaFacebook className='logo'></FaFacebook>
                                 <FaInstagram className='logo'></FaInstagram>
                             </div>
